@@ -6,8 +6,8 @@
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to="/Create">new blog</Link> 
-                {/* <Link to="/Blog-details/:id">Blog Details</Link>
-                <Link to="/NotFound">NotFound</Link> */}
+                {/* <Link to="/BlogDetails/id">Blog Details</Link> */}
+                {/* <Link to="/NotFound">NotFound</Link>  */}
                
             </div>
         </nav>

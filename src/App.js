@@ -6,9 +6,9 @@ import Navbar from './components/navbar';
 import Home from './components/Home';
 import Create from './components/Create';
 import 'react-toastify/dist/ReactToastify.css';
-
+// import UseFetch from './components/UseFetch.js';
 // import NotFound from './components/NotFound';
-// import BlogDetails from './components/BlogDetails';
+import BlogDetails from './components/BlogDetails';
 
 
 function App() {
@@ -24,16 +24,15 @@ function App() {
 
               <Route path="/Create">
               <Create/>
-              </Route>
-{/* 
-              <Route path="/Blog-details/:id">
+             </Route>
+               <Route path="/BlogDetails/:id">
                 <BlogDetails/>
-              </Route>
+              </Route> 
 
-              <Route path="*">
+              {/* <Route path="*">
                 <NotFound/>
               </Route> */}
-            </Switch>
+            </Switch> 
          </div>
         </div>
      </Router>

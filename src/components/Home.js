@@ -1,8 +1,16 @@
+import BlogList from "./BlogList";  
+import useFetch from "./UseFetch";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
  const Home = () =>{
+    const {data}=useFetch('http://localhost:4000/blogs');
     return(
-        <div>
-          <h1>Home</h1>
+        <div className="home">
+          {data && <BlogList blogs={data} title={"All blogs "} />}
+
         </div>
+
     );
  }
 
